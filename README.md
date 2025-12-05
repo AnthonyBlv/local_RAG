@@ -4,18 +4,14 @@ A locally hosted Retrieval-Augmented Generation (RAG) system built to securely i
 
 🔗 **Repository:** [https://github.com/AnthonyBlv/local_RAG](https://github.com/AnthonyBlv/local_RAG)
 
-![Status](https://img.shields.io/badge/Status-Active-success)
-![Python](https://img.shields.io/badge/Python-3.10+-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
-
 ## 🚀 Features
 
 *   **Local & Private:** All data processing and AI inference happen on your machine. No data leaves your network.
 *   **Multi-Format Support:** Natively supports `.pdf`, `.docx`, `.txt`, `.csv`, `.md`, and `.xlsx` files.
-*   **Smart Context Awareness:** Automatically retrieves relevant document chunks to answer questions accurately.
+*   **Context Awareness:** Retrieves relevant document chunks to answer accurately.
 *   **Session Management:** Create, save, load, and delete chat sessions with persistent history.
-*   **Interactive UI:** Clean Streamlit interface with real-time streaming, source citations, and direct file access.
-*   **Auto-Sync:** One-click synchronization to update the vector database when you add or remove files.
+*   **Interactive UI:** Simple Streamlit interface with source citations, and direct file access.
+*   **Sync:** One-click synchronization to update the vector database when you add or remove files.
 
 ## 🛠️ Architecture
 
@@ -70,9 +66,5 @@ streamlit run frontend.py
 ### 4. Using the App
 *   **First Run:** The app will automatically initialize the vector database and index your documents.
 *   **Chat:** Type your questions in the chat bar.
-*   **Sources:** The AI will cite sources for its answers.
-*   **Sync:** If you add new files to your data folder, click **"🔄 Sync Vector Space"** in the sidebar to update the knowledge base instantly.
-
-
-
-
+*   **Sources:** The assistant will cite sources for its answers.
+*   **Sync:** Click **"🔄 Sync Vector Space"** in the sidebar to update the knowledge base instantly.
