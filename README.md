@@ -1,6 +1,6 @@
 # Local RAG
 
-A professional, locally hosted Retrieval-Augmented Generation (RAG) system built to securely interact with your private documents. This application leverages **LangChain** for document processing, **ChromaDB** for vector storage, **Ollama** for local LLM inference, and **Streamlit** for a user-friendly chat interface.
+A locally hosted Retrieval-Augmented Generation (RAG) system built to securely interact with your private documents. This application leverages **LangChain** for document processing, **ChromaDB** for vector storage, **Ollama** for local LLM inference, and **Streamlit** for a user-friendly chat interface.
 
 🔗 **Repository:** [https://github.com/AnthonyBlv/local_RAG](https://github.com/AnthonyBlv/local_RAG)
 
