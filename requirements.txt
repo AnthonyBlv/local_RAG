@@ -1,0 +1,11 @@
+langchain
+langchain-community
+langchain-chroma
+langchain-huggingface
+langchain-text-splitters
+chromadb
+streamlit
+sentence-transformers
+requests
+unstructured
+networkx
