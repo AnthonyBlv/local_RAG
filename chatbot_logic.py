@@ -1,11 +1,13 @@
 import requests
 import json
 
-def post_request(model="gemma3:1b", max_tokens=1000, messages=[]):
+MODEL = "gemma3:1b"
+
+def post_request(max_tokens=1000, messages=[]):
     """Sends the actual HTTP POST to Ollama."""
     url = "http://localhost:11434/api/chat"
     payload = {
-        "model": model,
+        "model": MODEL,
         "messages": messages,
         "max_tokens": max_tokens,
         "stream": False
@@ -67,8 +69,7 @@ def query_rag_system(user_input, vector_store, chat_history, params):
     messages_payload = [full_system_message] + recent_history + [{"role": "user", "content": user_input}]
 
     # 4. Call Ollama
-    response_message = post_request(
-        model="gemma3:1b", 
+    response_message = post_request( 
         messages=messages_payload, 
         max_tokens=params.get("max_tokens", 1000)
     )
